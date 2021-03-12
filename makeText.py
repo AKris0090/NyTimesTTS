@@ -1,5 +1,6 @@
 import pytesseract
 from PIL import Image
+import os
 
 miscellaneous = []
 average = 0
@@ -17,6 +18,10 @@ def getText(filePath):
 
 
 def createFile(textStuff, name):
+    try:
+        os.mkdir(r"C:/Users/arjoo/PycharmProjects/test/TextFiles")
+    except FileExistsError:
+        print("made the last one too!")
     file = open(r"TextFiles/" + str(name), "w+")
     file.write(textStuff)
     file.close()
@@ -38,7 +43,7 @@ def findBodyText(text):
                 index += 1
     except IndexError:
         print('complete')
-    find2 = "ADVERTISEMENT"
+    find2 = "Contact Us:"
     index2 = 0
     try:
         while True:
@@ -49,7 +54,7 @@ def findBodyText(text):
     except IndexError:
         print('')
     bodyText = ""
-    for i in range((index + 1), index2):
+    for i in range((index + 1), index2 - 1):
         if "Frequently Asked Questions" not in lines[i]:
             bodyText += lines[i] + "\n"
     return bodyText

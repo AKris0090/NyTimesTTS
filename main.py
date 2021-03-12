@@ -37,7 +37,7 @@ makeBWArray()
 numPages = getNumPages()
 for i in range(numPages):
     try:
-        imgPath = r'PDF/article'
+        imgPath = r'PDImage/bufferImage'
         grayArray = toGray(imgPath, i)
         binaryArray = toBinary(grayArray, binaryThresh, i)
         verticalLineGaps = verticalWhiteGaps(binaryArray)
@@ -58,7 +58,7 @@ for i in range(numPages):
     except FileNotFoundError:
         break
     allText += "\n\n"
-    print("Page " + str(i) + " Done!")
+    print("Page " + str(i + 1) + " Done!")
 os.remove(r"PDImage/temp.png")
 createFile(allText, r"text")
 body = findBodyText(allText)
