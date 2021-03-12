@@ -7,7 +7,7 @@ average = 0
 
 
 def makeString(filePath):
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Users\arjoo\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Users\[USER]\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
     text = pytesseract.image_to_string(Image.open(filePath))
     return text
 
@@ -19,7 +19,7 @@ def getText(filePath):
 
 def createFile(textStuff, name):
     try:
-        os.mkdir(r"C:/Users/arjoo/PycharmProjects/test/TextFiles")
+        os.mkdir(r"C:/Users/'[USER]'/PycharmProjects/test/TextFiles")
     except FileExistsError:
         print("made the last one too!")
     file = open(r"TextFiles/" + str(name), "w+")
