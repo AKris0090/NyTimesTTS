@@ -13,6 +13,12 @@
    Archlinux: sudo pacman -S poppler
    Ubuntu: sudo apt-get install poppler-utils
 
-7. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
+7. Download wkhtmltopdf here: https://wkhtmltopdf.org/downloads.html
 
-8. Set project encoding to windows-1252
+8. Drag entire folder, usually in C:/Users/[USER], into pycharm project, usually in C:/Users/[USER]/PycharmProjects/[PROJECT NAME]
+
+9. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
+
+10. Run main.py after adding link to NY Times article
+
+11. Set project encoding to windows-1252 (open bodyText file in TextFiles after running main, and click message at top)
