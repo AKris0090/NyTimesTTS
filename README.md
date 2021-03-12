@@ -1,3 +1,3 @@
 # NyTimesTTS
 
-go through the setup text file to setup the project.
+Go through the setup text file to setup the project.
