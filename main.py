@@ -5,6 +5,7 @@ from makeText import makeString, findBodyText, createFile
 from pdfFileDownload import makePDF
 from segmentation import verticalWhiteGaps
 from turnToImage import convertToJPG
+from ttsAndAudioFile import toFile, makeCohesive
 
 link = 'https://www.nytimes.com/2021/03/10/us/politics/biden-covid-relief-bill.html'
 binaryThresh = 254
@@ -35,6 +36,7 @@ def getNumPages():
 allText = ''
 makeBWArray()
 numPages = getNumPages()
+# splits into separate lines for more similar conversion from image to text
 for i in range(numPages):
     try:
         imgPath = r'PDImage/bufferImage'
@@ -63,3 +65,6 @@ os.remove(r"PDImage/temp.png")
 createFile(allText, r"text")
 body = findBodyText(allText)
 createFile(body, r"bodyText")
+cohesiveText = makeCohesive(body)
+createFile(cohesiveText, r"cohesiveBodyText")
+toFile(cohesiveText, "test.mp3")

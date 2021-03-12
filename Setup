@@ -13,12 +13,16 @@
    Archlinux: sudo pacman -S poppler
    Ubuntu: sudo apt-get install poppler-utils
 
-7. Download wkhtmltopdf here: https://wkhtmltopdf.org/downloads.html
+7. pip install pyttsx3
 
-8. Drag entire folder, usually in C:/Users/[USER], into pycharm project, usually in C:/Users/[USER]/PycharmProjects/[PROJECT NAME]
+8. Download wkhtmltopdf here: https://wkhtmltopdf.org/downloads.html
 
-9. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
+9. Drag entire folder, usually in C:/Users/[USER], into pycharm project, usually in C:/Users/[USER]/PycharmProjects/[PROJECT NAME]
 
-10. Run main.py after adding link to NY Times article
+10. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
 
-11. Set project encoding to windows-1252 (open bodyText file in TextFiles after running main, and click message at top)
+11. Change all the the [USER] blocks to the current user in these files: turnToImage, makeText, pdfFileDownload
+
+11. Run main.py after adding link to NY Times article
+
+12. Set project encoding to windows-1252 (open bodyText file in TextFiles after running main, and click message at top)
