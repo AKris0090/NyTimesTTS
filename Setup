@@ -1,0 +1,18 @@
+1. pip install --upgrade pip
+
+2. pip install pdf2image
+
+3. pip install opencv-python
+
+4. pip install pytesseract
+
+5. pip install pdfkit
+
+6. Conda: conda install -c conda-forge poppler
+   Mac: brew install poppler
+   Archlinux: sudo pacman -S poppler
+   Ubuntu: sudo apt-get install poppler-utils
+
+7. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
+
+8. Set project encoding to windows-1252
