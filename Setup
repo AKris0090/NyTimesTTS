@@ -1,28 +1,32 @@
-1. pip install --upgrade pip
+1. Download pytesseract from here and follow the steps to install it: https://github.com/UB-Mannheim/tesseract/wiki
 
-2. pip install pdf2image
+2. Create new project interpreter in conda environment
 
-3. pip install opencv-python
+3. pip install --upgrade pip
 
-4. pip install pytesseract
+4. pip install pdf2image
 
-5. pip install pdfkit
+5. pip install opencv-python
 
-6. Conda: conda install -c conda-forge poppler
+6. pip install pytesseract
+
+7. pip install pdfkit
+
+8. Conda: conda install -c conda-forge poppler
    Mac: brew install poppler
    Archlinux: sudo pacman -S poppler
    Ubuntu: sudo apt-get install poppler-utils
 
-7. pip install pyttsx3
+9. pip install pyttsx3
 
-8. Download wkhtmltopdf here: https://wkhtmltopdf.org/downloads.html
+10. Download wkhtmltopdf here: https://wkhtmltopdf.org/downloads.html
 
-9. Drag entire folder, usually in C:/Users/[USER], into pycharm project, usually in C:/Users/[USER]/PycharmProjects/[PROJECT NAME]
+11. Drag entire folder, usually in C:/Users/[USER], into pycharm project, usually in C:/Users/[USER]/PycharmProjects/[PROJECT NAME]
 
-10. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
+12. Change filepath in @turnToImage.py to the location in drive. Keep "wkhtmltopdf/bin/wkhtmltopdf.exe"
 
-11. Change all the the [USER] blocks to the current user in these files: turnToImage, makeText, pdfFileDownload
+13. Change all the the arjoo directories to the current user in these files: turnToImage, makeText, pdfFileDownload
 
-11. Run main.py after adding link to NY Times article
+14. Run main.py after adding link to NY Times article
 
-12. Set project encoding to windows-1252 (open bodyText file in TextFiles after running main, and click message at top)
+15. Set project encoding to windows-1252 (open bodyText file in TextFiles after running main, and click message at top)
