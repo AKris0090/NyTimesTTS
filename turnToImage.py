@@ -4,7 +4,7 @@ import os
 
 def convertToJPG(path):
     try:
-        os.mkdir(r"C:/Users/[USER]/PycharmProjects/test/PDImage")
+        os.mkdir(r"C:/Users/arjoo/PycharmProjects/NyTimesTTS/PDImage")
     except FileExistsError:
         print("made that too...")
     name = r'PDImage/bufferImage'
