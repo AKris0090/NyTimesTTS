@@ -21,7 +21,7 @@ def createFile(textStuff, name):
     try:
         os.mkdir(r"C:/Users/'[USER]'/PycharmProjects/test/TextFiles")
     except FileExistsError:
-        print("made the last one too!")
+        print(" ")
     file = open(r"TextFiles/" + str(name), "w+")
     file.write(textStuff)
     file.close()
